@@ -22,4 +22,5 @@ jobs:
           cd final-project-siska
           git pull
           npm install
+          npm install -g pm2
           pm2 restart all || pm2 start index.js --name "node-app"
